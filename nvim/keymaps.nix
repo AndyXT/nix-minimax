@@ -33,14 +33,7 @@
       { mode = "n"; key = "<leader>ed"; action = "<Cmd>lua MiniFiles.open()<CR>"; options.desc = "Directory"; }
       { mode = "n"; key = "<leader>ef"; action = "<Cmd>lua MiniFiles.open(vim.api.nvim_buf_get_name(0))<CR>"; options.desc = "File directory"; }
       { mode = "n"; key = "<leader>ei"; action = "<Cmd>edit $MYVIMRC<CR>"; options.desc = "init.lua"; }
-      # NOTE: The edit_plugin_file keymaps below reference stdpath('config')/plugin/
-      # paths which won't exist in a nixvim setup. Keep them as placeholders for the
-      # user to customize the paths to their own config files later.
-      { mode = "n"; key = "<leader>ek"; action = "<Cmd>execute 'edit ' .. stdpath('config') .. '/plugin/20_keymaps.lua'<CR>"; options.desc = "Keymaps config"; }
-      { mode = "n"; key = "<leader>em"; action = "<Cmd>execute 'edit ' .. stdpath('config') .. '/plugin/30_mini.lua'<CR>"; options.desc = "MINI config"; }
       { mode = "n"; key = "<leader>en"; action = "<Cmd>lua MiniNotify.show_history()<CR>"; options.desc = "Notifications"; }
-      { mode = "n"; key = "<leader>eo"; action = "<Cmd>execute 'edit ' .. stdpath('config') .. '/plugin/10_options.lua'<CR>"; options.desc = "Options config"; }
-      { mode = "n"; key = "<leader>ep"; action = "<Cmd>execute 'edit ' .. stdpath('config') .. '/plugin/40_plugins.lua'<CR>"; options.desc = "Plugins config"; }
       {
         mode = "n"; key = "<leader>eq"; options.desc = "Quickfix list";
         action.__raw = ''
