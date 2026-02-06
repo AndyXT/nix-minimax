@@ -8,6 +8,8 @@
     ./rustacean.nix
     ./clangd.nix
     ./cscope.nix
+    ./otter.nix
     ./rustowl.nix
+    ./snacks.nix
   ];
 }

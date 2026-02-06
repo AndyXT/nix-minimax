@@ -78,6 +78,7 @@
       { mode = "n"; key = "<leader>fV"; action = "<Cmd>Pick visit_paths<CR>"; options.desc = "Visit paths (cwd)"; }
 
       # g - Git --------------------------------------------------------------------
+      { mode = "n"; key = "<leader>gg"; action = "<Cmd>lua Snacks.lazygit()<CR>"; options.desc = "Lazygit"; }
       { mode = "n"; key = "<leader>ga"; action = "<Cmd>Git diff --cached<CR>"; options.desc = "Added diff"; }
       { mode = "n"; key = "<leader>gA"; action = "<Cmd>Git diff --cached -- %<CR>"; options.desc = "Added diff buffer"; }
       { mode = "n"; key = "<leader>gc"; action = "<Cmd>Git commit<CR>"; options.desc = "Commit"; }
