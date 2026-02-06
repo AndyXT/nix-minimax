@@ -54,7 +54,7 @@ This module requires the [nixvim home-manager module](https://github.com/nix-com
     home-manager.url = "github:nix-community/home-manager";
     nixvim.url = "github:nix-community/nixvim";
     # If using rustowl:
-    # rustowl-flake.url = "github:nickel-lang/rustowl";
+    # rustowl-flake.url = "github:nix-community/rustowl-flake";
   };
 
   outputs = { nixpkgs, home-manager, nixvim, ... }: {
@@ -98,7 +98,7 @@ The following packages are added via `extraPackages` in `nvim/default.nix`:
 | friendly-snippets| `plugins.friendly-snippets`| Snippet library                    |
 | dropbar          | `plugins.dropbar`          | Breadcrumb bar                     |
 | rustaceanvim     | `plugins.rustaceanvim`     | Rust tooling                       |
-| rustowl          | `extraPlugins`             | Requires rustowl-flake overlay     |
+| [rustowl](https://github.com/cordx56/rustowl) | `extraPlugins`  | Requires [rustowl-flake](https://github.com/nix-community/rustowl-flake) overlay |
 | clangd-extensions| `plugins.clangd-extensions`| C/C++ support                      |
 | cscope_maps      | `extraPlugins`             | cscope keybindings via extraConfigLua |
 
