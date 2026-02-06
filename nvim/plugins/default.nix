@@ -8,5 +8,6 @@
     ./rustacean.nix
     ./clangd.nix
     ./cscope.nix
+    ./rustowl.nix
   ];
 }
