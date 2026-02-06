@@ -17,6 +17,12 @@
       stylua
     ];
 
+    # Bootstrap mini.extra before the alphabetically-ordered module setup
+    # so that MiniExtra is available for ai/hipatterns config
+    extraConfigLuaPre = ''
+      require('mini.extra').setup({})
+    '';
+
     # Colorscheme - miniwinter ships with mini.nvim
     extraConfigLua = ''
       vim.cmd('colorscheme miniwinter')

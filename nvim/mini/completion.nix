@@ -53,7 +53,7 @@
   '';
 
   programs.nixvim.extraFiles = {
-    "snippets/global.json" = builtins.toJSON {
+    "snippets/global.json".text = builtins.toJSON {
       "Current datetime" = {
         prefix = "cdtm";
         body = "$CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND";
